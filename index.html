@@ -1,0 +1,52 @@
+<!-- https://webkid.io/blog/image-processing-in-javascript/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Filters</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <div class="filter-container">
+            <h2 class="heading">Image Filters</h2>
+            <div class="filters">
+                <label for="">Blur</label>
+                <input type="range" class="filter" name="blur" value="0">
+                
+                <label for="">Sepia</label>
+                <input type="range" class="filter" name="sepia" value="0">
+
+                <label for="">Invert</label>
+                <input type="range" class="filter"  name="invert" value="0">
+
+                <label for="">Contrast</label>
+                <input type="range" class="filter"  name="contrast" value="60">
+
+                <label for="">Grayscale</label>
+                <input type="range" class="filter" name="grayscale" value="0">
+
+                <label for="">Opacity</label>
+                <input type="range" class="filter" name="opacity" value="100">
+            </div>
+            <button class="reset">Reset</button>
+        </div>
+        <!--  -->
+
+        <div class="image-container">
+            <div class="input-url">
+                <input type="text" placeholder="Image url..." id="image-url">
+                <button class="change">Change</button>
+            </div>
+            <div class="image">
+            </div>
+        </div>
+    </div>
+
+
+<script src="index.js"></script>
+</body>
+</html>
